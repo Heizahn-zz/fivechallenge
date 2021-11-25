@@ -21,18 +21,20 @@ const fetchData = async () => {
 
 const showNaciones = (pais) => {
   let elementos = ''
-  
+
   pais.forEach(item => {
     elementos += `
-    <article class="cardNacion">
-      <img src=${item.flag} alt="${item.name}">
-      <div class="detalles">
-        <h3>${item.name}</h3>
-        <p><b>Population: </b>${item.population}</p>
-        <p><b>Region: </b>${item.region}</p>
-        <p><b>Capital: </b>${item.capital}</p>
-      </div>
-    </article>
+    <a href="pais.html?name=${item.name}">
+      <article class="cardNacion">
+        <img src=${item.flag} alt="${item.name}">
+        <div class="detalles">
+          <h3>${item.name}</h3>
+          <p><b>Population: </b>${item.population}</p>
+          <p><b>Region: </b>${item.region}</p>
+          <p><b>Capital: </b>${item.capital}</p>
+        </div>
+      </article>
+    </a>
     `
   });
 
