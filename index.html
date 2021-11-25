@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/38b7a4b148.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/customSelect.css">
+</head>
+<body>
+  <header>
+    <div class="title">
+      <p>Where in the world?</p>
+      <button class="themeButtom">
+        <i class="far fa-moon"></i>
+        Dark Mode
+    </button>
+    </div>
+    <nav>
+      <div class="filter">
+        <form class="filtros" id="buscador">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search of country..." id="inputText" >
+        </form>
+        <div class="custom-select" style="width: 200px;">
+          <select name="select" id="filtroSelect">
+            <option value="Filter by Country">Filter by Country</option>
+            <option value="">All</option>
+            <option value="Africa">Africa</option>
+            <option value="Americas">Americas</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="layoutNaciones" id="naciones">
+    <article class="cardNacion">
+      <img src="https://flagcdn.com/w320/ve.png" alt="Venezuela">
+      <div class="detalles">
+          <h3>Venezuela</h3>
+          <p><b>Population: </b>28435943</p>
+          <p><b>Region: </b>Americas</p>
+          <p><b>Capital: </b>Caracas</p>
+      </div>
+    </article>
+  </main>
+  <script src="./js/theme.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/customSelect.js"></script>
+  <script src="./js/buscador.js"></script>
+</body>
+</html>
