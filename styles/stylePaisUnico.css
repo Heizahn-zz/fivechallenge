@@ -1,5 +1,5 @@
 .back {
-  margin-top: 2rem;
+  margin-top: 4rem;
   background-color: var(--color-bg-secondary);
   width: 8rem;
   height: 4rem;
@@ -16,4 +16,90 @@
 .back:hover{
   transform: scale(1.2);
   transition: .4s;
+}
+
+.paisUnico{
+  padding: 2rem 4rem;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 4rem
+}
+.imgContainer{
+  background-color: var(--color-bg);
+  box-shadow: 0rem 0rem 1rem var(--colorShadow);
+}
+
+.detallesPais{
+  margin-top: 1rem;
+  color: var(--color-text);
+}
+.infoPais{
+  display: grid;
+  gap: 2rem;
+}
+.detallesPais h3{
+  margin-bottom: 2rem;
+  font-size: 3.4rem;
+}
+
+.primerDetalle{
+  margin-top: 1rem;
+}
+.primerDetalle p{
+  padding: .5rem;
+}
+
+.borders{
+  margin-top: 2rem;
+  color: var(--color-text);
+}
+
+.buttonBorderContainer{
+  margin-top: 1rem;
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttonBorder{
+  background-color: var(--color-bg-secondary);
+  width: 12rem;
+  height: 4rem;
+  box-shadow: 0rem 0rem 1rem var(--colorShadow);
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+@media screen and (min-width: 1440px) {
+  .paisUnico{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .infoPais{
+    display: grid;
+    gap: 13rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .borders{
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .borders h4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .buttonBorderContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
 }
